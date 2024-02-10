@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'packages/flutter_heatmap_calendar.dart';
+import 'package:flutter_package_heatmap/pages/home.dart';
 
 void main() {
   runApp(const FlutterPackge());
@@ -10,8 +10,10 @@ class FlutterPackge extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: HeatMapCalendar(),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(useMaterial3: false),
+      home: const Home(),
     );
   }
 }
